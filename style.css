@@ -1,0 +1,212 @@
+/*
+🪸 Coral Health Classifier — Streamlit Custom Styling
+Fully supports Dark / Light theme toggle
+ */
+
+/* Global Backgrounds and Core Containers */
+.stApp, .stSidebar, .stSidebar > div:first-child, .main, [data-testid="stHeader"] {
+    background-color: var(--page-bg) !important;
+    color: var(--text-color) !important;
+}
+
+/* Hide Streamlit Header */
+[data-testid="stHeader"] {
+    background-color: var(--page-bg) !important;
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Typography and Text Elements */
+p, label, .stMarkdown, .stInfo, .stCaption, .stAlert, .stText,
+.stFileUploader label, .stFileUploader [data-testid="stFileUploaderDropzone"] > div > div {
+    color: var(--text-color) !important;
+}
+
+/*
+📁 File Uploader Styling — fixed for dark & light themes
+*/
+
+/* Dropzone background and border */
+[data-testid="stFileUploaderDropzone"] {
+    background-color: color-mix(in srgb, var(--card-bg) 92%, white 8%) !important;
+    border: 1px dashed var(--accent-color) !important;
+    border-radius: 12px !important;
+    transition: all 0.25s ease-in-out;
+}
+
+/* Highlight border when dragging a file */
+[data-testid="stFileUploaderDropzone"]:hover {
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+/* Drag & drop and limit text */
+[data-testid="stFileUploaderDropzone"] * {
+    color: var(--text-color) !important;
+    opacity: 1 !important;
+    font-weight: 500 !important;
+}
+
+/* Uploaded file name (handles all possible Streamlit class names) */
+[data-testid="stFileUploader"] span,
+[data-testid="stFileUploader"] div[title],
+[data-testid="stFileUploader"] p,
+[data-testid="stFileUploader"] .st-emotion-cache,
+[data-testid="stFileUploader"] .st-emotion-cache * {
+    color: var(--text-color) !important;
+    opacity: 1 !important;
+    font-weight: 600 !important;
+    text-shadow: none !important;
+}
+
+/* Also ensure disabled-looking filenames get visible color */
+[data-testid="stFileUploader"] [data-testid="stFileUploaderFileName"],
+[data-testid="stFileUploader"] .uploadedFileName,
+[data-testid="stFileUploader"] div[role="button"] span {
+    color: var(--text-color) !important;
+    opacity: 1 !important;
+    font-weight: 600 !important;
+}
+
+/* "Browse files" button fix */
+[data-testid="stFileUploaderDropzone"] button {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+    transition: all 0.3s ease;
+}
+[data-testid="stFileUploaderDropzone"] button:hover {
+    background-color: var(--border-color) !important;
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+/* File list container (background contrast) */
+[data-testid="stFileUploaderFileList"] {
+    background-color: color-mix(in srgb, var(--card-bg) 95%, white 5%) !important;
+    border-radius: 8px !important;
+}
+
+/*
+🧭 Headings, Layout, and Cards
+*/
+
+h1 {
+    color: var(--accent-color) !important;
+    text-align: center;
+    font-size: 2.6rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 0.2em !important;
+}
+h2, h3 {
+    color: var(--accent-color) !important;
+    text-align: center;
+}
+
+.block-container {
+    padding-top: 2rem;
+}
+
+/* Card containers */
+.css-1d391kg {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/*
+🌊 Buttons
+*/
+.stButton button {
+    background: linear-gradient(135deg, var(--accent-color), var(--border-color));
+    color: white !important;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 0.7rem 2rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+.stButton button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+/*
+🪸 Expanders, Info Boxes & Progress Bars
+ */
+
+div.streamlit-expanderHeader {
+    background-color: var(--expander-bg) !important;
+    color: var(--accent-color) !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+}
+div.streamlit-expanderContent {
+    background-color: var(--expander-bg) !important;
+    color: var(--text-color) !important;
+    border-left: 3px solid var(--border-color) !important;
+    padding: 1rem !important;
+}
+
+/* Progress Bar */
+.stProgress > div > div > div > div {
+    background-color: var(--accent-color) !important;
+}
+
+/* Info box */
+div[data-testid="stInfo"] {
+    background-color: var(--expander-bg) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+/*
+📊 Charts & Visualization
+*/
+[data-testid="stChart"] {
+    background-color: var(--card-bg) !important;
+    border-radius: 12px !important;
+    padding: 0.5rem;
+}
+
+/*
+Sidebar and Scrollbars
+*/
+
+section[data-testid="stSidebar"] {
+    border-right: 1px solid var(--border-color);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--page-bg);
+}
+
+/*
+⚙️ Footer Captions
+*/
+footer, .stCaption {
+    color: var(--text-color) !important;
+    opacity: 0.9;
+}
+
+/*
+✨ Optional Glow Animation for Upload Interaction
+*/
+@keyframes glow {
+    0% { box-shadow: 0 0 4px var(--accent-color); }
+    50% { box-shadow: 0 0 16px var(--accent-color); }
+    100% { box-shadow: 0 0 4px var(--accent-color); }
+}
+
+[data-testid="stFileUploaderDropzone"]:active {
+    animation: glow 1.5s infinite ease-in-out;
+}
