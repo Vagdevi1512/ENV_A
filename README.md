@@ -4,7 +4,6 @@
 
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
 ![MobileNetV2](https://img.shields.io/badge/Model-MobileNetV2-blue)
 
 A deep-learning project to classify coral images into **two categories** using **MobileNetV2 transfer learning**.  
