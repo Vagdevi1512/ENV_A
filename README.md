@@ -12,6 +12,7 @@ The project includes data preprocessing, augmentation, training, evaluation, vis
 Each subfolder must contain images downloaded from:
 
 Dataset Link: https://www.kaggle.com/datasets/aneeshdighe/corals-classification
+
 Here the Training, Validation, Testing should be extracted from downloads and keep these separately in the folder where remaining code is present
 ```
 Training/
