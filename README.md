@@ -2,10 +2,6 @@
 # 🪸 Coral Classification using MobileNetV2
 ### Deep Learning Model for Coral Health Detection (TensorFlow/Keras)
 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white)
-![MobileNetV2](https://img.shields.io/badge/Model-MobileNetV2-blue)
-
 A deep-learning project to classify coral images into **two categories** using **MobileNetV2 transfer learning**.  
 The project includes data preprocessing, augmentation, training, evaluation, visualization, and exporting the model in both **H5** and **TFLite** formats for mobile/edge deployment.
 
@@ -13,6 +9,9 @@ The project includes data preprocessing, augmentation, training, evaluation, vis
 
 ## 📁 Dataset Structure
 
+Each subfolder must contain images downloaded from: 
+https://www.kaggle.com/datasets/aneeshdighe/corals-classification
+Here the Training, Validation, Testing should be extracted from downloads and keep these separately in the folder where remaining code is present
 ```
 Training/
     ├── bleached_corals/
@@ -26,9 +25,6 @@ Testing/
     ├── bleached_corals/
     └── healthy_corals/
 ```
-
-Each subfolder must contain images downloaded from: 
-https://www.kaggle.com/datasets/aneeshdighe/corals-classification
 ---
 
 ## Features
