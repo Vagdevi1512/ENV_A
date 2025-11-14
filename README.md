@@ -1,5 +1,5 @@
 
-# 🪸 Coral Classification using MobileNetV2
+# Coral Classification using MobileNetV2
 ### Deep Learning Model for Coral Health Detection (TensorFlow/Keras)
 
 A deep-learning project to classify coral images into **two categories** using **MobileNetV2 transfer learning**.  
@@ -7,7 +7,7 @@ The project includes data preprocessing, augmentation, training, evaluation, vis
 
 ---
 
-## 📁 Dataset Structure
+## Dataset Structure
 
 Each subfolder must contain images downloaded from: 
 https://www.kaggle.com/datasets/aneeshdighe/corals-classification
@@ -38,7 +38,7 @@ Testing/
 
 ---
 
-## 🧰 Installation
+## Installation
 
 ```bash
 pip install tensorflow numpy matplotlib scikit-learn
@@ -52,7 +52,7 @@ pip install tensorflow-gpu
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 ```
 MobileNetV2 (pretrained, frozen)
@@ -68,7 +68,7 @@ Dense(2, Softmax)
 
 ---
 
-## ▶️ Run the Training Script
+## Run the Training Script
 
 ```bash
 streamlit run app_Mobile_Net.py
@@ -76,7 +76,7 @@ streamlit run app_Mobile_Net.py
 
 ---
 
-## 📊 Evaluation Output
+## Evaluation Output
 
 - Accuracy/Loss curves  
 - Confusion matrix  
@@ -84,7 +84,7 @@ streamlit run app_Mobile_Net.py
 
 ---
 
-## 💾 Output Files
+## Output Files
 
 ```
 CNN_model_MobileNet_CoralsClassification.h5
